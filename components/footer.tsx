@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           size={'icon'}
           className="text-muted-foreground/50"
         >
-          <Link href="https://twitter.com/zen_codepath" target="_blank">
+          <Link href="https://twitter.com/digitalrainhq" target="_blank">
             <SiTwitter size={18} />
           </Link>
         </Button>
