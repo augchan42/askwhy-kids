@@ -46,7 +46,8 @@ export function getModel(useSubModel = false) {
   }
 
   if (anthropicApiKey) {
-    return anthropic('claude-3-5-sonnet-20240620')
+    // return anthropic('claude-3-5-sonnet-20240620')
+    return anthropic('claude-3-haiku-20240307')
   }
 
   // Fallback to OpenAI instead
@@ -72,11 +73,11 @@ export function transformToolMessages(messages: CoreMessage[]): CoreMessage[] {
   return messages.map(message =>
     message.role === 'tool'
       ? {
-          ...message,
-          role: 'assistant',
-          content: JSON.stringify(message.content),
-          type: 'tool'
-        }
+        ...message,
+        role: 'assistant',
+        content: JSON.stringify(message.content),
+        type: 'tool'
+      }
       : message
   ) as CoreMessage[]
 }
