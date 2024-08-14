@@ -18,7 +18,7 @@ const fontSans = FontSans({
 
 const title = 'askwhy.kids'
 const description =
-  'An answer engine with kid-friendly topics.'
+  'An answer engine with kid-friendly responses and topics.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://askwhy.kids'),
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title,
     description,
     card: 'summary_large_image',
-    creator: '@zen_codepath'
+    creator: '@digitalrainhq'
   }
 }
 
