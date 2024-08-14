@@ -8,6 +8,8 @@ import Footer from '@/components/footer'
 import { Sidebar } from '@/components/sidebar'
 import { Toaster } from '@/components/ui/sonner'
 import { AppStateProvider } from '@/lib/utils/app-state'
+import GoogleTagManager from '@/components/GoogleTagManager'
+import GoogleTagManagerNoscript from '@/components/GoogleTagManagerNoscript'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -48,6 +50,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head />
+      <GoogleTagManager />
       <body className={cn('font-sans antialiased', fontSans.variable)}>
         <ThemeProvider
           attribute="class"
@@ -57,6 +61,7 @@ export default function RootLayout({
         >
           <AppStateProvider>
             <Header />
+            <GoogleTagManagerNoscript />
             {children}
             <Sidebar />
             <Footer />
