@@ -3,22 +3,23 @@ import { ArrowRight } from 'lucide-react'
 
 const exampleMessages = [
   {
-    heading: 'What is GPT-4o mini?',
-    message: 'What is GPT-4o mini?'
+    heading: '✨ Why do stars twinkle?',
+    message: 'Why do stars twinkle?'
   },
   {
-    heading: 'Why is Nvidia growing rapidly?',
-    message: 'Why is Nvidia growing rapidly?'
+    heading: '🦋 How do butterflies fly?',
+    message: 'How do butterflies fly?'
   },
   {
-    heading: 'How does the Vercel AI SDK work?',
-    message: 'How does the Vercel AI SDK work?'
+    heading: '🌈 Why is the sky blue?',
+    message: 'Why is the sky blue?'
   },
   {
-    heading: 'Tesla vs Rivian',
-    message: 'Tesla vs Rivian'
+    heading: '🐠 Do fish sleep?',
+    message: 'Do fish sleep?'
   }
 ]
+
 export function EmptyScreen({
   submitMessage,
   className

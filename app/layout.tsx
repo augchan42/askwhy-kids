@@ -14,12 +14,12 @@ const fontSans = FontSans({
   variable: '--font-sans'
 })
 
-const title = 'Morphic'
+const title = 'askwhy.kids'
 const description =
-  'A fully open-source AI-powered answer engine with a generative UI.'
+  'An answer engine with kid-friendly topics.'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://morphic.sh'),
+  metadataBase: new URL('https://askwhy.kids'),
   title,
   description,
   openGraph: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title,
     description,
     card: 'summary_large_image',
-    creator: '@miiura'
+    creator: '@zen_codepath'
   }
 }
 
@@ -51,7 +51,7 @@ export default function RootLayout({
       <body className={cn('font-sans antialiased', fontSans.variable)}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
