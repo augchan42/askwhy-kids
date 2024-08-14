@@ -10,14 +10,23 @@ export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
       <AI initialAIState={{ chatId: id, messages: [] }}>
-        <div className="w-full max-w-5xl mb-8">
+        <div className="w-full max-w-5xl">
           <Image
             src="/images/askwhy-kid4.jpg"
             alt="Splash Image"
             width={800}
             height={200}
             priority
-            className="rounded-lg shadow-lg object-cover w-full h-[200px]"
+            className="rounded-lg shadow-lg object-cover w-full h-[200px] hidden md:block"
+          />
+          {/* Mobile Image */}
+          <Image
+            src="/images/askwhy-kid.jpg"
+            alt="Splash Image"
+            width={400}
+            height={300}
+            priority
+            className="rounded-lg shadow-lg object-cover w-full h-[300px] md:hidden"
           />
         </div>
         <div className="w-full max-w-5xl">
