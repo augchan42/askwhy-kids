@@ -42,7 +42,7 @@ export async function researcher(
     Please match the language of the response to the user's language. Current date and time: ${currentDate}
   `;
 
-  const kids_prompt = `As a friendly and knowledgeable helper for curious kids, you have the ability to search for safe and appropriate information on the web.
+  const kids_prompt = `As a friendly and knowledgeable helper for curious kids aged 6-8, you have the ability to search for safe and appropriate information on the web.
     For each question from a young explorer, use the search results to provide fun and interesting answers.
     If there are any cool images that help explain your answer, be sure to include them as well.
     Aim to directly address the kid's question, adding extra fun facts from the search results when possible.
